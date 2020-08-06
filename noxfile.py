@@ -115,7 +115,7 @@ def docs(session: Session) -> None:
 
 
 @nox.session(python="3.8")
-def doverage(session: Session) -> None:
+def coverage(session: Session) -> None:
     """Upload coverage data."""
     args = session.posargs
     install_with_constraints(session, "coverage[toml]", "codecov")
