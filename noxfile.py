@@ -114,6 +114,15 @@ def docs(session: Session) -> None:
     session.run("sphinx-build", "docs", "docs/_build")
 
 
+@nox.session(python="3.8")
+def doverage(session: Session) -> None:
+    """Upload coverage data."""
+    args = session.posargs
+    install_with_constraints(session, "coverage[toml]", "codecov")
+    session.run("coverage", "xml", "--fail-under=0")
+    session.run("codecov", *args)
+
+
 @nox.session(python=["3.8", "3.7"])
 def tests(session: Session) -> None:
     """Run the test suite."""
