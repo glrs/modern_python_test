@@ -3,6 +3,7 @@ name = "modern_python_test"
 version = "0.1.0"
 description = ""
 authors = ["Your Name <you@example.com>"]
+documentation = "https://modern-python-test.readthedocs.io"
 
 [tool.poetry.dependencies]
 python = "^3.7"
