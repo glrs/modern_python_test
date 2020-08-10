@@ -1,9 +1,14 @@
 [tool.poetry]
 name = "modern_python_test"
 version = "0.1.0"
-description = ""
-authors = ["Your Name <you@example.com>"]
+authors = ["glrs <5999366+glrs@users.noreply.github.com>"]
 documentation = "https://modern-python-test.readthedocs.io"
+description = "The hypermodern Python project"
+license = "MIT"
+readme = "README.md"
+homepage = "https://github.com/glrs/modern_python_test"
+repository = "https://github.com/glrs/modern_python_test"
+keywords = ["hypermodern"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
@@ -50,10 +55,3 @@ show_missing = true
 [build-system]
 requires = ["poetry>=0.12"]
 build-backend = "poetry.masonry.api"
-
-description = "The hypermodern Python project"
-license = "MIT"
-readme = "README.md"
-homepage = "https://github.com/glrs/modern_python_test"
-repository = "https://github.com/glrs/modern_python_test"
-keywords = ["hypermodern"]
